@@ -47,6 +47,17 @@ class List {
       this.tail = null
     }
   }
+
+  get (index) {
+    let current = this.head
+
+    while (index > 0) {
+      current = current.next
+      index--
+    }
+
+    return current
+  }
 }
 
 const list = new List
