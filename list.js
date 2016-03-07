@@ -42,6 +42,10 @@ class List {
 
   removeHead () {
     this.head = this.head.next
+
+    if (!this.head) {
+      this.tail = null
+    }
   }
 }
 
