@@ -32,9 +32,3 @@ list.add(new Node('D'))
 list.add(new Node('E'))
 list.add(new Node('F'))
 console.log(list)
-
-
-
-
-
-
