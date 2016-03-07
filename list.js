@@ -13,8 +13,16 @@ class List {
   }
 
   add (node) {
-    node.next = this.head
-    this.head = node
+    if (this.head) {
+      let current = this.head
+
+      while(current.next) {
+        current = current.next
+      }
+      current.next = node
+    } else {
+      this.head = node
+    }
   }
 }
 
